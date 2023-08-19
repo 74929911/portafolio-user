@@ -3,6 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --color-text:black;
+    --transition : all .3s ease;
+    --color-button-shadow :1px -1px 20px -4px rgba(255, 43, 185, 0.99);
+    --color-shadow:rgba(255, 43, 185, 0.99);
+    --background:white;
+}
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+    width:12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(192, 192, 192);
+    border-radius: 20px;
+}
+body::-webkit-scrollbar-track {
+    border-radius: 10px; 
+ }
+body{
+    transition: var(--transition);
+    background-color: var(--background);
+}
+.btn{
+    user-select: none;
+    position: absolute;
+    right: 0;
+    font-size: 90px;
+    top: 0;
+    cursor: pointer;
+    z-index:1 ;
+    color: var(--color-text);
+ }
 .opciones_contacto{
     width: 50px;
     height: 300px;
@@ -38,6 +74,12 @@
     font-family: 'Lilita One', cursive;
     letter-spacing: 5px;
     text-transform: uppercase;
+    color: var(--color-text);
+    transition: var(--transition);
+}
+.background div h1,p{
+    transition: var(--transition);
+    color: var(--color-text);
 }
 
 .background .background_btn_arrow a {
@@ -45,7 +87,7 @@
     width: 160px;
     padding: 15px 25px;
     text-align: center;
-    background-color: rgba(255, 43, 185, 0.99);
+    background-color: var(--color-shadow);
     display: flex;
     align-items: center;
     color: white;
@@ -53,10 +95,9 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: space-around;
     text-decoration: none;
-    box-shadow: 1px -1px 20px -4px rgba(255, 43, 185, 0.99);
-    -webkit-box-shadow: 1px -1px 20px -4px rgba(255, 43, 185, 0.99);
-    -moz-box-shadow: 1px -1px 20px -4px rgba(255, 43, 185, 0.99);
+    box-shadow: var(--color-button-shadow);
     border-radius: 5px;
+    transition: var(--transition);
 }
 
 .background img {
@@ -103,13 +144,17 @@ body {
 .habilidades .habilidades_card h3 {
     font-size: 25px;
     line-height: 22px;
-    color: rebeccapurple;
+    /* color: rebeccapurple; */
     font-family: 'Permanent Marker', cursive;
     font-weight: bolder;
+    color: var(--color-text);
+    transition: var(--transition);
 }
 .habilidades .habilidades_card p{
     line-height: 22px;
-    color: rgb(67, 67, 67);
+    /* color: rgb(67, 67, 67); */
+    color: var(--color-text);
+    transition: var(--transition);
 }
 .habilidades .habilidades_card h3,
 p,
@@ -142,7 +187,7 @@ img {
     top: 40px;
     width: 600px;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid var(--color-text);
 }
 .conocimientos_article_text_div p{
     line-height: 25px;
@@ -209,6 +254,8 @@ img {
 }
 .conocimientos_article_h3{
     font-size: 50px;
+    color: var(--color-text);
+    transition: var(--transition);
 }
 
 .title_text_main{
@@ -217,6 +264,7 @@ img {
     font-family: 'Lilita One', cursive;
     font-size: 40px;
     letter-spacing: 20px;
+    color: var(--color-text);
 }
 .cerebro_title{
     width: 20%;
@@ -228,6 +276,7 @@ img {
     background-size: contain;
     flex-direction: column-reverse;
     background-repeat: no-repeat;
+    color: var(--color-text);
     align-items: center;
 }
 @media screen and (min-width:768px) and (max-width:1140px) {
