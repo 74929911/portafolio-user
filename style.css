@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.opciones_contacto{
+    width: 50px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    z-index: 1;
+    top: 15px;
+    left: 10px;
+    background-color: rgb(76, 76, 240);
+    box-shadow: 0 0 10px 0 rgb(76, 76, 240);
+}
+.opciones_contacto a img{
+    width: 70%;
+}
+.background {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.background .background_text {
+    width: 500px;
+    padding: 30px;
+}
+
+.background div h1 {
+    font-size: 50px;
+    font-family: 'Lilita One', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.background .background_btn_arrow a {
+    margin-top: 40px;
+    width: 160px;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: rgba(255, 43, 185, 0.99);
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: space-around;
+    text-decoration: none;
+    box-shadow: 1px -1px 20px -4px rgba(255, 43, 185, 0.99);
+    -webkit-box-shadow: 1px -1px 20px -4px rgba(255, 43, 185, 0.99);
+    -moz-box-shadow: 1px -1px 20px -4px rgba(255, 43, 185, 0.99);
+    border-radius: 5px;
+}
+
+.background img {
+    width: 30%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.habilidades {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.habilidades .habilidades_card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s ease-in;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    /* box-shadow: 1px -1px 20px -4px rgba(0, 74, 255, 0.99);
+    -webkit-box-shadow: 1px -1px 20px -4px rgba(0, 74, 255, 0.99);
+    -moz-box-shadow: 1px -1px 20px -4px rgba(0, 74, 255, 0.99); */
+}
+.habilidades .habilidades_card:hover{
+    transform: scale(1.08);
+}
+.habilidades .habilidades_card img {
+    width: 100%;
+    height: 250px;
+    /* background-color: rgb(248, 126, 126); */
+    object-fit: contain;
+    /* border: 20px solid rgb(255, 255, 255); */
+}
+
+.habilidades .habilidades_card h3 {
+    font-size: 25px;
+    line-height: 22px;
+    color: rebeccapurple;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bolder;
+}
+.habilidades .habilidades_card p{
+    line-height: 22px;
+    color: rgb(67, 67, 67);
+}
+.habilidades .habilidades_card h3,
+p,
+img {
+    margin: 10px;
+    font-family: 'roboto';
+}
+.conocimientos{
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+}
+.conocimientos .conocimientos_article{
+    background-color: red;
+    border: 1px solid black;
+}
+.conocimientos_article img{
+    width: 20%;
+}
+.conocimientos_article_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conocimientos_article_text_div{
+    position: relative;
+    top: 40px;
+    width: 600px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.conocimientos_article_text_div p{
+    line-height: 25px;
+}
+.conocimientos_article_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.html{
+    height: 300px;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    animation-name:html;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes html{
+    from{
+        transform: translateY(-20px);
+    }to{
+        transform: translateY(0);
+    }
+}
+.css{
+    height: 400px;
+    object-fit: contain;
+    position: absolute;
+    transform: rotate(30deg) translate(120px);
+    animation-name:css;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes css{
+    from{
+        transform: rotate(30deg) translate(120px);
+    }to{
+        transform: rotate(0) translate(0);
+    }
+}
+.javascript{
+    height: 300px;
+    object-fit: contain;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-30deg) translate(-120px);
+    animation-name:javascript;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes javascript{
+    from{
+        transform: rotate(-30deg) translate(-120px);
+    }to{
+        transform: rotate(0) translate(0);
+    }
+}
+.conocimientos_article_h3{
+    font-size: 50px;
+}
+
+.title_text_main{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Lilita One', cursive;
+    font-size: 40px;
+    letter-spacing: 20px;
+}
+.cerebro_title{
+    width: 20%;
+}
+.texto_cerebro_title{
+    width: 100%;
+    display: flex;
+    background-image: url("./assets/photoshop.png");
+    background-size: contain;
+    flex-direction: column-reverse;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+@media screen and (min-width:768px) and (max-width:1140px) {
+    .background {
+        width: 100%;
+        background-color: red;
+    }
+    .habilidades{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .habilidades .habilidades_card{
+        margin-top: 20px;
+    }
+     .conocimientos{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .conocimientos_article{
+        margin-top: 20px;
+    } 
+    .html,.css,.javascript{
+        width: 200px;
+        height: 400px;
+    }
+    .title_text_main{
+        font-size: 30px;
+        letter-spacing: normal;
+    }
+    .conocimientos_article_h3{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .background {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .background img {
+        width: 60%;
+        position: absolute;
+        z-index: -1;
+        filter: blur(10px);
+    }
+
+    .background .background_text {
+        width: 100%;
+        text-align: center;
+        color: green;
+    }
+
+    .background .background_btn_arrow a {
+        width: 160px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .habilidades{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+    .habilidades .habilidades_card{
+        margin-top: 20px;
+    }
+    .conocimientos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        gap: 10px;
+    }
+    .html,.css,.javascript{
+        height: 200px;
+    }
+    .conocimientos_article_text_div{
+        width: 100%;
+    }
+    .title_text_main{
+        font-size: 25px;
+        letter-spacing: 9px;
+    }
+    .conocimientos_article_h3{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:400px){
+    .habilidades .habilidades_card{
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .habilidades .habilidades_card img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+    .conocimientos .conocimientos_article{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .conocimientos .conocimientos_article img{
+        width: 100%;
+        height: 200px;
+    }
+    .conocimientos_article_text_div{
+        width: 100%;
+    }
+    .html,.css,.javascript{
+        width: 50px;
+        height: 100px;
+    }
+    .title_text_main{
+        font-size: 20px;
+    }
+    .conocimientos_article_h3{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:400px){
+    .conocimientos_article_h3{
+        font-size: 20px;
+    }
+    .html,.css,.javascript{
+        width: 80px;
+        height: 100px;
+    }
+}
+@media screen and (max-width:290px){
+    .conocimientos_article_h3{
+        font-size: 20px;
+    }
+    .html,.css,.javascript{
+        width: 90px;
+        height: 100px;
+    }
+}
