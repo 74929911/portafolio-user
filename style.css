@@ -5,7 +5,7 @@
 }
 :root{
     --color-text:black;
-    --transition : all .3s ease;
+    --transition : all .5s ease;
     --color-button-shadow :1px -1px 20px -4px rgba(255, 43, 185, 0.99);
     --color-shadow:rgba(255, 43, 185, 0.99);
     --background:white;
@@ -222,7 +222,7 @@ img {
     transform: rotate(30deg) translate(120px);
     animation-name:css;
     animation-direction: alternate;
-    animation-duration: 10s;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
@@ -241,7 +241,7 @@ img {
     transform: rotate(-30deg) translate(-120px);
     animation-name:javascript;
     animation-direction: alternate;
-    animation-duration: 10s;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
