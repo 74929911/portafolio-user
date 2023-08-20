@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Portafolio</title>
 </head>
@@ -29,13 +30,21 @@
             <a href="https://profile.indeed.com/?hl=es_PE&co=PE&from=gnav-homepage&_ga=2.156642619.1266411826.1692423152-1020811554.1692230195"
                 target="_blank"><img src="./assets/indeed.webp" alt=""></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>
-        <span class="material-symbols-outlined btn" id="btn">
+        <div class="header">
+            <a href="" class="logo">Logo</a>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+
+            <nav class="navbar" id="navbar">
+                <a href="" class="">Inicio</a>
+                <a href="">Quien soy</a>
+            </nav>
+
+        </div>
+        <span class="material-symbols-outlined btnNight" id="btn">
             toggle_on
         </span>
         <section class="background">

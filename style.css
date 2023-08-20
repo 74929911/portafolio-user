@@ -8,7 +8,8 @@
     --transition : all .5s ease;
     --color-button-shadow :1px -1px 20px -4px rgba(255, 43, 185, 0.99);
     --color-shadow:rgba(255, 43, 185, 0.99);
-    --background:white;
+    --background-todo:white;
+    --color-navbar:rgb(231, 231, 231);
 }
 body::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -26,15 +27,104 @@ body::-webkit-scrollbar-track {
     border-radius: 10px; 
  }
 body{
+    padding-top: 120px;
     transition: var(--transition);
-    background-color: var(--background);
+    background-color: var(--background-todo);
 }
-.btn{
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background-color: var(--color-navbar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    transition: var(--transition);
+}
+.logo{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    font-size: 1.15rem;
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    font-family: 'roboto';
+    font-weight: bolder;
+}
+#check{
+    display: none;
+}
+.icons{
+    position: absolute;
+    right: 5%;
+
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+
+}
+@media screen and (max-width:992px) {
+    .header{
+        padding: 1.3rem 5%;
+        
+    }
+}
+@media screen and (max-width:768px) {
+
+    .icons{
+        display: inline-block;
+    }
+    #close-icon{
+        display: none;
+
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: var(--color-navbar);
+        transition: .3s ease;
+        overflow: hidden;
+    }
+    #check:checked~.navbar {
+        height: 17.7rem;
+    }
+    .navbar a{
+        display: block;
+        font-family: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+    }
+}
+.btnNight{
     user-select: none;
     position: absolute;
-    right: 0;
+    right: 20px;
+    top: 90px;
     font-size: 90px;
-    top: 0;
     cursor: pointer;
     z-index:1 ;
     color: var(--color-text);
@@ -47,8 +137,8 @@ body{
     position: fixed;
     border-radius: 20px;
     justify-content: space-evenly;
-    z-index: 1;
-    top: 15px;
+    z-index: 2;
+    top: 120px;
     left: 10px;
     background-color: rgb(76, 76, 240);
     box-shadow: 0 0 10px 0 rgb(76, 76, 240);
@@ -290,10 +380,6 @@ img {
     align-items: center;
 }
 @media screen and (min-width:768px) and (max-width:1140px) {
-    .background {
-        width: 100%;
-        background-color: red;
-    }
     .habilidades{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
