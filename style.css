@@ -412,6 +412,9 @@ img {
 }
 
 @media screen and (max-width:767px) {
+    .btnNight{
+        top: 70px;
+    }
     .background {
         height: auto;
         flex-direction: column;
