@@ -419,7 +419,6 @@ img {
         height: auto;
         flex-direction: column;
     }
-
     .background img {
         width: 60%;
         position: absolute;
@@ -428,7 +427,7 @@ img {
     }
 
     .background .background_text {
-        width: 100%;
+        width: 80%;
         text-align: center;
         color: green; 
     }
@@ -465,7 +464,16 @@ img {
     }
 }
 @media screen and (max-width:400px){
-    
+    .background .background_text {
+        width: 300px;
+        padding: 20px;
+    }
+    .background_title{
+        font-size: 25px !important;
+    }
+    .text-content-bg{
+        font-size: 10px;
+    }
     .btnNight{
         top: 70px;
     }
@@ -501,10 +509,16 @@ img {
         font-size: 20px;
     }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
     .background .background_text {
-        width: 400px;
+        width: 300px;
         padding: 20px;
+    }
+    .background_title{
+        font-size: 25px !important;
+    }
+    .text-content-bg{
+        font-size: 10px;
     }
     .conocimientos_article_h3{
         font-size: 20px;
