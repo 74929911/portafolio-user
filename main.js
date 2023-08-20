@@ -17,7 +17,7 @@ btn.addEventListener("click",()=>{
         rootStyle.setProperty("--color-text","black");
         rootStyle.setProperty("--color-button-shadow","1px -1px 20px -4px rgba(255, 43, 185, 0.99)");
         rootStyle.setProperty("--color-shadow","rgba(255, 43, 185, 0.99)");
-        rootStyle.setProperty("--background-todo","rgb(237, 237, 237)");
+        rootStyle.setProperty("--background-todo","white");
         rootStyle.setProperty("--color-navbar","rgb(231, 231, 231)");
         i=0;
     }
