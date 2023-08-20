@@ -402,6 +402,7 @@ img {
 .identado{
     font-family: 'roboto';
     margin-left: 20px;
+    color: var(--color-text);
 }
 @media screen and (min-width:768px) and (max-width:1140px) {
     .habilidades{
@@ -432,6 +433,9 @@ img {
 }
 
 @media screen and (max-width:767px) {
+    .php{
+        height: 100px;
+    }
     .btnNight{
         top: 70px;
     }
