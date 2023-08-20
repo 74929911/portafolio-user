@@ -1,6 +1,19 @@
 const btn = document.getElementById("btn");
 const btnMenu = document.getElementById("btnMenu");
-
+const quien_soy = document.getElementById("quien_soy");
+quien_soy.addEventListener("click",(e)=>{
+    e.preventDefault();
+    Swal.fire({
+        title: 'Diseño en photoshop',
+        text: 'Visita mi portafolio en behance.',
+        imageUrl: './assets/photoshop-sweet.jpg',
+        imageWidth: 250,
+        imageHeight: 160,
+        imageAlt: 'Custom image',
+      }).then(function() {
+        window.location = "https://www.behance.net/sergiorojas32";
+    });
+})
 let i = 0;
 const rootStyle = document.documentElement.style;
 btn.addEventListener("click",()=>{
