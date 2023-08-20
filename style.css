@@ -348,6 +348,26 @@ img {
         transform: rotate(0) translate(0);
     }
 }
+.php{
+    height: 200px;
+    object-fit: contain;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-30deg) translate(-120px);
+    animation-name:php;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes php{
+    from{
+        transform: rotate(-30deg) translate(-120px);
+    }to{
+        transform: rotate(0) translate(0);
+    }
+}
+
 .conocimientos_article_h3{
     font-size: 50px;
     color: var(--color-text);
