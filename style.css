@@ -192,6 +192,7 @@ body{
 
 .background img {
     width: 30%;
+    user-select: none;
 }
 
 body {
@@ -378,6 +379,10 @@ img {
     /* background-repeat: no-repeat; */
     color: var(--color-text);
     align-items: center;
+}
+.identado{
+    font-family: 'roboto';
+    margin-left: 20px;
 }
 @media screen and (min-width:768px) and (max-width:1140px) {
     .habilidades{
