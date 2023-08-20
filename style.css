@@ -465,6 +465,10 @@ img {
     }
 }
 @media screen and (max-width:400px){
+    
+    .btnNight{
+        top: 70px;
+    }
     .habilidades .habilidades_card{
         width: 100%;
         margin-top: 20px;
@@ -498,6 +502,10 @@ img {
     }
 }
 @media screen and (max-width:400px){
+    .background .background_text {
+        width: 400px;
+        padding: 20px;
+    }
     .conocimientos_article_h3{
         font-size: 20px;
     }
