@@ -39,7 +39,7 @@ body{
     padding: 1.3rem 10%;
     background-color: var(--color-navbar);
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     z-index: 3;
     transition: var(--transition);
@@ -124,7 +124,7 @@ body{
     user-select: none;
     position: absolute;
     right: 20px;
-    top: 150px;
+    top: 90px;
     font-size: 90px;
     cursor: pointer;
     z-index:1 ;
