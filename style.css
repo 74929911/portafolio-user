@@ -65,7 +65,6 @@ body{
 .icons{
     position: absolute;
     right: 5%;
-
     font-size: 2.8rem;
     color: white;
     cursor: pointer;
@@ -103,6 +102,8 @@ body{
         background-color: var(--color-navbar);
         transition: .3s ease;
         overflow: hidden;
+        justify-content: space-around;
+        flex-direction: column;
     }
     #check:checked~.navbar {
         height: 17.7rem;
@@ -197,7 +198,24 @@ body{
 body {
     overflow-x: hidden;
 }
-
+.img_carrusel{ 
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+}
+.carousel-item{
+    background-color: rgb(0, 153, 255);
+}
+.texto_in_carrusel{
+    color: var(--color-text);
+}
+.texto_in_carrusel:not(p){
+    font-size: 40px !important;
+    font-weight: bold;
+}
+.texto_in_carrusel:not(h5){
+    font-weight: bold;
+}
 .habilidades {
     width: 100vw;
     height: auto;
