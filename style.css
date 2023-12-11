@@ -155,7 +155,9 @@ body{
     align-items: center;
 }
 .background .background_text {
-    width: 500px;
+    position: relative;
+    top: 70px;
+    width: 550px;
     padding: 30px;
 }
 
